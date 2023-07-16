@@ -13,6 +13,7 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, -2.25f, 0);
+
     }
 }
