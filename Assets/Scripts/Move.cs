@@ -19,7 +19,7 @@ public class Move : MonoBehaviour
         transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, -2.25f, 0);
     }
 
-    private void OnCollisionEnter(Collision col)
+    private void OnCollisionEnter2D(Collision col)
     {
         score++;
         pontos.text = "Pontos: " + score;
